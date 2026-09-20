@@ -1,3 +1,18 @@
-﻿*.xlsx
-*.xlsm
+# Working Excel files at the repo root (not the monthly results you commit)
+/*.xlsx
+/*.xlsm
 ~$*
+
+# Monthly result workbooks in data-raw/ ARE tracked on purpose — do not ignore them.
+!/data-raw/*.xlsx
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Python
+data-pipeline/__pycache__/
+*.pyc
+
+# Local working notes
+/Inst.md

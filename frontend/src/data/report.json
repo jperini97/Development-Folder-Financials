@@ -1,0 +1,20 @@
+{
+  "reportingMonth": "Sample Month (no workbook committed yet)",
+  "sourceFile": "placeholder",
+  "generatedAt": "2026-01-01T00:00:00Z",
+  "mtd": [
+    { "item": "Carried Interest Income", "Actual": 644470.91, "Budget": 624683, "Var $": 19787.91, "Var %": 0.0317 },
+    { "item": "Management Fee Income", "Actual": 512000, "Budget": 498000, "Var $": 14000, "Var %": 0.0281 },
+    { "item": "Servicing Fee Income", "Actual": 210000, "Budget": 225000, "Var $": -15000, "Var %": -0.0667 },
+    { "item": "Total Expenses", "Actual": 1650000, "Budget": 1600000, "Var $": 50000, "Var %": 0.0313 },
+    { "item": "Net Income", "Actual": 720000, "Budget": 690000, "Var $": 30000, "Var %": 0.0435 }
+  ],
+  "rollingActual": [
+    { "item": "Carried Interest Income", "Jan-26": 774586, "Feb-26": 546439, "Mar-26": 496250, "Apr-26": 214294, "May-26": 580214, "Jun-26": 602789, "Jul-26": 643676, "Aug-26": 644471, "Sep-26": 680059, "Oct-26": 723074, "Nov-26": 723074, "Dec-26": 723074 },
+    { "item": "Net Income", "Jan-26": 610000, "Feb-26": 580000, "Mar-26": 560000, "Apr-26": 300000, "May-26": 640000, "Jun-26": 660000, "Jul-26": 700000, "Aug-26": 720000, "Sep-26": 730000, "Oct-26": 740000, "Nov-26": 745000, "Dec-26": 750000 }
+  ],
+  "rollingBudget": [
+    { "item": "Carried Interest Income", "Jan-26": 463599, "Feb-26": 477002, "Mar-26": 434472, "Apr-26": 457500, "May-26": 481215, "Jun-26": 512170, "Jul-26": 615806, "Aug-26": 624683, "Sep-26": 606428, "Oct-26": 635452, "Nov-26": 635852, "Dec-26": 657308 },
+    { "item": "Net Income", "Jan-26": 580000, "Feb-26": 560000, "Mar-26": 540000, "Apr-26": 500000, "May-26": 600000, "Jun-26": 620000, "Jul-26": 650000, "Aug-26": 690000, "Sep-26": 700000, "Oct-26": 710000, "Nov-26": 715000, "Dec-26": 720000 }
+  ]
+}
