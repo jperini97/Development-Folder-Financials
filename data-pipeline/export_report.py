@@ -23,11 +23,9 @@ SHEET_NAME = "P&L - Monthly Snapshot"
 HEADER_ROW = 10
 
 
-def latest_workbook() -> Path:
+def latest_workbook() -> Path | None:
     files = sorted(SRC_DIR.glob("*.xlsx"))
-    if not files:
-        raise SystemExit(f"No .xlsx files found in {SRC_DIR}. Commit a monthly workbook there first.")
-    return files[-1]
+    return files[-1] if files else None
 
 
 def read_blocks(ws, header_row: int):
@@ -63,6 +61,9 @@ def read_table(ws, block, start_row: int):
 
 def main():
     wb_path = latest_workbook()
+    if wb_path is None:
+        print(f"No .xlsx files found in {SRC_DIR} — leaving frontend/src/data/report.json (placeholder) untouched.")
+        return
     wb = openpyxl.load_workbook(wb_path, data_only=True)
 
     if SHEET_NAME not in wb.sheetnames:
